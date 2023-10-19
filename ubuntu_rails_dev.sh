@@ -1,4 +1,4 @@
-# Setups up Rails for deployment in Ubuntu Server using rvm
+# Setups up Rails for development
 
 #!/bin/bash
 
@@ -24,9 +24,3 @@ rvm install $RUBY_VERSION --default
 # For rails
 gem install bundler
 gem install rails
-
-# For nginx
-gem install passenger
-
-# Requires manual intervention
-rvmsudo passenger-install-nginx-module
